@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/v_flip"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in/Sign up"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:layout_alignTop="@id/v_flip"
+            android:layout_alignRight="@+id/v_flip"
+            android:layout_alignBottom="@+id/v_flip"
+            android:layout_alignLeft="@+id/v_flip"
+            android:gravity="right|top"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BookLife"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_alignRight="@+id/v_flip"
+            android:layout_alignBottom="@+id/v_flip"
+            android:layout_alignLeft="@+id/v_flip"
+            android:layout_alignTop="@+id/v_flip"
+            android:gravity="center"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:background="@drawable/radius"
+            android:elevation="2.0dp"
+            android:layout_alignParentBottom="true">
+
+            //row has 2 row
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="15dp"
+                >
+
+                //row 1 has 2 column
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    //row1 column 1
+
+                    //row1 column 2 has 2 row
+
+                    <LinearLayout
+                        android:id="@+id/read"
+                        android:layout_width="0dp"
+                        android:layout_height="45mm"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/radius_read"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Read"
+                            android:layout_marginTop="10mm"
+                           android:layout_gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="40dp" />
+
+                        <ImageView
+                            android:layout_width="30mm"
+                            android:layout_height="25mm"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_launcher_read"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/buy"
+                            android:layout_height="20.8mm"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/raduis_buy"
+                            android:layout_margin="10dp"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Buy"
+                                android:layout_gravity="center"
+                                android:textSize="40dp"
+                                android:textColor="@color/colorBlack"
+                                />
+                            <ImageView
+                                android:layout_width="25mm"
+                                android:layout_height="12mm"
+                                android:src="@drawable/ic_launcher_buy_foreground"
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/sale"
+                            android:layout_height="20.8mm"
+                            android:layout_width="match_parent"
+                            android:background="@color/colorAccent"
+                            android:layout_margin="10dp"
+                            android:layout_rowSpan="2"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sale"
+                                android:textSize="40dp"
+                                android:textColor="@color/colorBlack"
+                                />
+                            <ImageView
+                                android:layout_width="25mm"
+                                android:layout_height="12mm"
+                                android:src="@drawable/ic_launcher_sale_foreground"
+
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            //Row 2
+                <LinearLayout
+                    android:id="@+id/event"
+                    android:layout_height="21mm"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/radius_even"
+                    android:layout_margin="10dp"
+                    android:layout_rowSpan="2"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Event"
+                        android:textSize="40dp"
+                        android:textColor="@color/colorBlack"
+                        />
+                    <ImageView
+                        android:layout_width="25mm"
+                        android:layout_height="12mm"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_launcher_event_foreground"
+
+                        />
+                </LinearLayout>
+                    </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MyAssignment</string>
+
+    <string-array name="book_name">
+        <item>Harry Potter and Chamber of Secret</item>
+        <item>Harry Potter and globet of Fire</item>
+        <item>Harry Potter and Phillosopia stome</item>
+        <item>Harry Potter and Curse Child</item>
+        <item>Hobbit</item>
+        <item>Petter Rabbit</item>
+        <item>Little women</item>
+        <item>Snow White</item>
+        <item>Vampire</item>
+
+    </string-array>
+    <string-array name="description">
+        <item>This is description of the book</item>
+        <item>This is description of the book</item>
+        <item>This is description of the book</item>
+        <item>This is description of the book</item>
+        <item>This is description of the book</item>
+        <item>This is description of the book</item>
+        <item>This is description of the book</item>
+        <item>This is description of the book</item>
+        <item>This is description of the book</item>
+    </string-array>
+    <string name="fa_icon_areachart">&#xf1fe;</string>
+    <string name="fa_icon_piechart">&#xf200;</string>
+    <!--    <string name="fa_icon_linechart">&#;</string>-->
+
+</resources>
